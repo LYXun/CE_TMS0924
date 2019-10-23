@@ -42,5 +42,12 @@ namespace CE_TMS.COMMON
         月结 = 3,
         现付 = 4
     }
-    
+
+    public enum ServicesStatus :int
+    {
+        生效 = 1,
+        失效 = 2
+    }
+
+
 }

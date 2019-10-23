@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE728559-3E3E-490F-BA60-3E4675D4C928}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CE_TMS</RootNamespace>
+    <AssemblyName>CE_TMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.Charts.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.6.7\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="subWindows\dialog\ImportOrderNumberDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\ImportOrderNumberDialogForm.Designer.cs">
+      <DependentUpon>ImportOrderNumberDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\ServiceChannelDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\ServiceChannelDialogForm.Designer.cs">
+      <DependentUpon>ServiceChannelDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\ServiceProviderDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\ServiceProviderDialogForm.Designer.cs">
+      <DependentUpon>ServiceProviderDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\financeManager\collect\CollectManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\financeManager\collect\CollectManagerForm.Designer.cs">
+      <DependentUpon>CollectManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\financeManager\collect\CollectBillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\financeManager\collect\CollectBillForm.Designer.cs">
+      <DependentUpon>CollectBillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\operateManager\ForecastManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\operateManager\ForecastManageForm.Designer.cs">
+      <DependentUpon>ForecastManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\operateManager\WayBillSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\operateManager\WayBillSearchForm.Designer.cs">
+      <DependentUpon>WayBillSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\servicesManager\ServicesChannelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\servicesManager\ServicesChannelForm.Designer.cs">
+      <DependentUpon>ServicesChannelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\servicesManager\ServicesProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\servicesManager\ServicesProductForm.Designer.cs">
+      <DependentUpon>ServicesProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\servicesManager\ServicesProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\servicesManager\ServicesProviderForm.Designer.cs">
+      <DependentUpon>ServicesProviderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\userManager\AddCustomerKindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\userManager\AddCustomerKindForm.Designer.cs">
+      <DependentUpon>AddCustomerKindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\userManager\ChangeCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\userManager\ChangeCustomerForm.Designer.cs">
+      <DependentUpon>ChangeCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\userManager\UserCategoryManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\userManager\UserCategoryManagerForm.Designer.cs">
+      <DependentUpon>UserCategoryManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\userManager\UserManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\userManager\UserManagerForm.Designer.cs">
+      <DependentUpon>UserManagerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="subWindows\dialog\ServiceChannelDialogForm.resx">
+      <DependentUpon>ServiceChannelDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\financeManager\collect\CollectManagerForm.resx">
+      <DependentUpon>CollectManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\financeManager\collect\CollectBillForm.resx">
+      <DependentUpon>CollectBillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\operateManager\ForecastManageForm.resx">
+      <DependentUpon>ForecastManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\operateManager\WayBillSearchForm.resx">
+      <DependentUpon>WayBillSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\servicesManager\ServicesProviderForm.resx">
+      <DependentUpon>ServicesProviderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\userManager\AddCustomerKindForm.resx">
+      <DependentUpon>AddCustomerKindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\userManager\ChangeCustomerForm.resx">
+      <DependentUpon>ChangeCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\userManager\UserCategoryManagerForm.resx">
+      <DependentUpon>UserCategoryManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\userManager\UserManagerForm.resx">
+      <DependentUpon>UserManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CE_TMS.COMMON\CE_TMS.COMMON.csproj">
+      <Project>{2bbed92a-d37b-4743-b54d-b0dbf1499f80}</Project>
+      <Name>CE_TMS.COMMON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CE_TMS.MODEL\CE_TMS.MODEL.csproj">
+      <Project>{2e81293e-ebc7-40eb-8c3f-a628042ca1a2}</Project>
+      <Name>CE_TMS.MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resource\icon\chzd.png" />
+    <Content Include="resource\icon\ckjrk.png" />
+    <Content Include="resource\icon\dhzd.png" />
+    <Content Include="resource\icon\hytms.ico" />
+    <Content Include="resource\icon\plxgsj.png" />
+    <Content Include="resource\icon\search.png" />
+    <Content Include="resource\icon\searchIcon.png" />
+    <Content Include="resource\icon\tj.png" />
+    <Content Include="resource\icon\ybgl.png" />
+    <Content Include="resource\icon\ydcx.png" />
+    <Content Include="resource\icon\zczd.png" />
+    <Content Include="resource\icon\zdgl.png" />
+    <Content Include="resource\icon\zrzd.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

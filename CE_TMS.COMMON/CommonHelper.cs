@@ -1,4 +1,5 @@
-﻿using DevComponents.DotNetBar;
+﻿using CE_TMS.MODEL;
+using DevComponents.DotNetBar;
 using NLog;
 using System;
 using System.Collections.Generic;
@@ -31,9 +32,19 @@ namespace CE_TMS.COMMON
             }
         }
 
+        public string GetUserName()
+        {
+            var userCacheObj = CachHelper.Instance.GetData("user") as TmsCustomer;
+            if(userCacheObj == null || string.IsNullOrEmpty(userCacheObj.CreateOpName))
+            {
+                return "";
+            }
+            return userCacheObj.CreateOpName;
+        }
+
         public void ShowAlert(string msg)
         {
-            TaskDialog.Show("慧运TMS管理系统",eTaskDialogIcon.Exclamation,msg,"",eTaskDialogButton.Ok,eTaskDialogBackgroundColor.Red);
+            TaskDialog.Show("TMS管理系统",eTaskDialogIcon.Exclamation,msg,"",eTaskDialogButton.Ok,eTaskDialogBackgroundColor.Red);
         }
 
         public void ShowAlert(object msg)

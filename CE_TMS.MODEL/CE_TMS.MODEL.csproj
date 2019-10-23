@@ -54,6 +54,8 @@
     <Compile Include="TmsObject.cs" />
     <Compile Include="TmsReturnBaseObj.cs" />
     <Compile Include="TmsReturnObj.cs" />
+    <Compile Include="TmsServiceChannel.cs" />
+    <Compile Include="TmsServiceProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

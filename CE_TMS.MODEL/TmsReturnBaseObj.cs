@@ -20,5 +20,24 @@ namespace CE_TMS.MODEL
             }
         }
 
+        public List<T> GetJsonList()
+        {
+            if (!string.IsNullOrEmpty(this.Entity))
+            {
+                this.ReturnObj = JsonConvert.DeserializeObject<TmsReturnObj<T>>(this.Entity);
+                if (string.IsNullOrEmpty(this.ReturnObj.Obj_Json))
+                {
+                    return null;
+                }
+                string objJson = this.ReturnObj.Obj_Json.Replace("{}", "");
+                if (!string.IsNullOrEmpty(objJson))
+                {
+                    this.ReturnObj.ListItem = JsonConvert.DeserializeObject<List<T>>(objJson);
+                    return this.ReturnObj.ListItem;
+                }
+                return null;
+            }
+            return null;
+        }
     }
 }

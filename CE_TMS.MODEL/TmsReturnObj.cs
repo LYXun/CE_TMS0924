@@ -10,6 +10,8 @@ namespace CE_TMS.MODEL
     {
         public object Code { get; set; }
         public string Msg { get; set; }
+        public string Obj_Count { get; set; }
         public string Obj_Json { get; set; }
+        public List<T> ListItem { get; set; }
     }
 }
