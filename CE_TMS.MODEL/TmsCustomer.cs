@@ -1,11 +1,11 @@
-﻿using CE_TMS.COMMON;
+﻿using CES_TMS.COMMON;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CE_TMS.MODEL
+namespace CES_TMS.MODEL
 {
     public class TmsCustomer
     {

@@ -1,4 +1,4 @@
-﻿using CE_TMS.COMMON;
+﻿using CES_TMS.COMMON;
 using DevComponents.DotNetBar;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CE_TMS
+namespace CES_TMS
 {
     public partial class MainForm : Office2007Form
     {
@@ -36,7 +36,7 @@ namespace CE_TMS
             setTabShow("预报管理", "ForecastManageForm");
         }
 
-        private void setTabShow(string tabName, string sfrmName,string sfrmRoot= "CE_TMS.subWindows.operateManager.")
+        private void setTabShow(string tabName, string sfrmName,string sfrmRoot= "CES_TMS.subWindows.operateManager.")
         {
             bool isOpen = false;
             foreach(SuperTabItem item in superTabControlMain.Tabs)
@@ -73,12 +73,12 @@ namespace CE_TMS
         #region 用户管理
         private void buttonItem8_Click(object sender, EventArgs e)
         {
-            setTabShow("用户管理", "UserManagerForm", "CE_TMS.subWindows.userManager.");
+            setTabShow("用户管理", "UserManagerForm", "CES_TMS.subWindows.userManager.");
         }
 
         private void buttonItem9_Click(object sender, EventArgs e)
         {
-            setTabShow("用户类别", "UserCategoryManagerForm", "CE_TMS.subWindows.userManager.");
+            setTabShow("用户类别", "UserCategoryManagerForm", "CES_TMS.subWindows.userManager.");
         }
         #endregion
 
@@ -112,6 +112,60 @@ namespace CE_TMS
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        //分区管理
+        private void buttonItem14_Click(object sender, EventArgs e)
+        {
+            setTabShow("分区管理", "ZoneManageForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //公布价管理
+        private void buttonItem15_Click(object sender, EventArgs e)
+        {
+            setTabShow("公布价格管理", "PublicPriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //成本价管理
+        private void buttonItem16_Click(object sender, EventArgs e)
+        {
+            setTabShow("成本价管理", "CostPriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //销售价管理
+        private void buttonItem17_Click(object sender, EventArgs e)
+        {
+            setTabShow("销售价格管理", "SalePriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //类别价管理
+        private void buttonItem18_Click(object sender, EventArgs e)
+        {
+            setTabShow("类别价管理", "KindPriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //客户协议价维护
+        private void buttonItem19_Click(object sender, EventArgs e)
+        {
+            setTabShow("客户协议价格维护", "CustomerAgreedPriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //价格试算
+        private void buttonItem21_Click(object sender, EventArgs e)
+        {
+            setTabShow("价格试算", "CalePriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //客户折扣价管理
+        private void buttonItem20_Click(object sender, EventArgs e)
+        {
+            setTabShow("客户折扣价格管理", "CustomerDiscountPriceForm", "CES_TMS.subWindows.priceManager.");
+        }
+
+        //杂费价管理
+        private void buttonItem22_Click(object sender, EventArgs e)
+        {
+            setTabShow("杂费价管理", "IncidentalPriceForm", "CES_TMS.subWindows.priceManager.");
         }
     }
 }

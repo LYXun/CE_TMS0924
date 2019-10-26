@@ -1,4 +1,4 @@
-﻿namespace CE_TMS.subWindows.dialog
+﻿namespace CES_TMS.subWindows.dialog
 {
     partial class ServiceChannelDialogForm
     {

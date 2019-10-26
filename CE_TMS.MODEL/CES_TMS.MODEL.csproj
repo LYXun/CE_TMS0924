@@ -7,8 +7,8 @@
     <ProjectGuid>{2E81293E-EBC7-40EB-8C3F-A628042CA1A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CE_TMS.MODEL</RootNamespace>
-    <AssemblyName>CE_TMS.MODEL</AssemblyName>
+    <RootNamespace>CES_TMS.MODEL</RootNamespace>
+    <AssemblyName>CES_TMS.MODEL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -1,4 +1,4 @@
-﻿namespace CE_TMS.subWindows.servicesManager
+﻿namespace CES_TMS.subWindows.servicesManager
 {
     partial class ServicesChannelForm
     {

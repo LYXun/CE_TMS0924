@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CE_TMS.subWindows.servicesManager
+namespace CES_TMS.subWindows.servicesManager
 {
     public partial class ServicesChannelForm : Form
     {

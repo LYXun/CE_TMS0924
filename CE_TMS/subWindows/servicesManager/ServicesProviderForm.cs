@@ -1,5 +1,5 @@
-﻿using CE_TMS.COMMON;
-using CE_TMS.MODEL;
+﻿using CES_TMS.COMMON;
+using CES_TMS.MODEL;
 using Newtonsoft.Json;
 using NLog;
 using System;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CE_TMS.subWindows.servicesManager
+namespace CES_TMS.subWindows.servicesManager
 {
     public partial class ServicesProviderForm : Form
     {

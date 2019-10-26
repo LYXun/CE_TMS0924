@@ -1,4 +1,4 @@
-﻿using CE_TMS.MODEL;
+﻿using CES_TMS.MODEL;
 using DevComponents.DotNetBar;
 using NLog;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CE_TMS.COMMON
+namespace CES_TMS.COMMON
 {
     public class CommonHelper
     {

@@ -1,4 +1,4 @@
-﻿namespace CE_TMS.subWindows.operateManager
+﻿namespace CES_TMS.subWindows.operateManager
 {
     partial class ForecastManageForm
     {
@@ -652,7 +652,7 @@
             // 
             this.btnServerProvider.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnServerProvider.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnServerProvider.Image = global::CE_TMS.Properties.Resources.search;
+            this.btnServerProvider.Image = global::CES_TMS.Properties.Resources.search;
             this.btnServerProvider.Location = new System.Drawing.Point(785, 93);
             this.btnServerProvider.Name = "btnServerProvider";
             this.btnServerProvider.Size = new System.Drawing.Size(31, 30);
@@ -664,7 +664,7 @@
             // 
             this.btnImportOrderNo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnImportOrderNo.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnImportOrderNo.Image = global::CE_TMS.Properties.Resources.search;
+            this.btnImportOrderNo.Image = global::CES_TMS.Properties.Resources.search;
             this.btnImportOrderNo.Location = new System.Drawing.Point(785, 10);
             this.btnImportOrderNo.Name = "btnImportOrderNo";
             this.btnImportOrderNo.Size = new System.Drawing.Size(31, 31);
@@ -676,7 +676,7 @@
             // 
             this.btnServiceChannel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnServiceChannel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnServiceChannel.Image = global::CE_TMS.Properties.Resources.search;
+            this.btnServiceChannel.Image = global::CES_TMS.Properties.Resources.search;
             this.btnServiceChannel.Location = new System.Drawing.Point(289, 49);
             this.btnServiceChannel.Name = "btnServiceChannel";
             this.btnServiceChannel.Size = new System.Drawing.Size(32, 32);

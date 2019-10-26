@@ -1,4 +1,4 @@
-﻿using CE_TMS.MODEL;
+﻿using CES_TMS.MODEL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CE_TMS.subWindows.dialog
+namespace CES_TMS.subWindows.dialog
 {
     public partial class ServiceChannelDialogForm : Form
     {

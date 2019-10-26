@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace CE_TMS.COMMON
+namespace CES_TMS.COMMON
 {
     public class ServicesAPIHelper
     {

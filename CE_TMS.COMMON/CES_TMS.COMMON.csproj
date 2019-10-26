@@ -7,8 +7,8 @@
     <ProjectGuid>{2BBED92A-D37B-4743-B54D-B0DBF1499F80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CE_TMS.COMMON</RootNamespace>
-    <AssemblyName>CE_TMS.COMMON</AssemblyName>
+    <RootNamespace>CES_TMS.COMMON</RootNamespace>
+    <AssemblyName>CES_TMS.COMMON</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -59,9 +59,9 @@
     <Compile Include="ServicesAPIHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CE_TMS.MODEL\CE_TMS.MODEL.csproj">
+    <ProjectReference Include="..\CE_TMS.MODEL\CES_TMS.MODEL.csproj">
       <Project>{2e81293e-ebc7-40eb-8c3f-a628042ca1a2}</Project>
-      <Name>CE_TMS.MODEL</Name>
+      <Name>CES_TMS.MODEL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

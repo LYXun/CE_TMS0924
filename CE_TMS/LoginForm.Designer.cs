@@ -1,4 +1,4 @@
-﻿namespace CE_TMS
+﻿namespace CES_TMS
 {
     partial class LoginForm
     {
