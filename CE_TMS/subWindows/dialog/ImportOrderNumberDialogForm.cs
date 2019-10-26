@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CE_TMS.subWindows.dialog
+namespace CES_TMS.subWindows.dialog
 {
     public partial class ImportOrderNumberDialogForm : Form
     {

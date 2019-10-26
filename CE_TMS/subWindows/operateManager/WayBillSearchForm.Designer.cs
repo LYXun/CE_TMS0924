@@ -1,4 +1,4 @@
-﻿namespace CE_TMS.subWindows.operateManager
+﻿namespace CES_TMS.subWindows.operateManager
 {
     partial class WayBillSearchForm
     {

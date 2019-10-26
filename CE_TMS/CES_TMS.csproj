@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EE728559-3E3E-490F-BA60-3E4675D4C928}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>CE_TMS</RootNamespace>
-    <AssemblyName>CE_TMS</AssemblyName>
+    <RootNamespace>CES_TMS</RootNamespace>
+    <AssemblyName>CES_TMS</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -81,6 +81,30 @@
     <Compile Include="subWindows\dialog\ImportOrderNumberDialogForm.Designer.cs">
       <DependentUpon>ImportOrderNumberDialogForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="subWindows\dialog\price\AddCostDiaLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\AddCostDiaLogForm.Designer.cs">
+      <DependentUpon>AddCostDiaLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.Designer.cs">
+      <DependentUpon>AddPublicPriceFristDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\ChangeAreaZoneDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\ChangeAreaZoneDialogForm.Designer.cs">
+      <DependentUpon>ChangeAreaZoneDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\FreightPriceSettingWeightTemplateDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\FreightPriceSettingWeightTemplateDialogForm.Designer.cs">
+      <DependentUpon>FreightPriceSettingWeightTemplateDialogForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="subWindows\dialog\ServiceChannelDialogForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +116,12 @@
     </Compile>
     <Compile Include="subWindows\dialog\ServiceProviderDialogForm.Designer.cs">
       <DependentUpon>ServiceProviderDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\services\AddServicesProviderDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\services\AddServicesProviderDialogForm.Designer.cs">
+      <DependentUpon>AddServicesProviderDialogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="subWindows\financeManager\collect\CollectManagerForm.cs">
       <SubType>Form</SubType>
@@ -116,6 +146,18 @@
     </Compile>
     <Compile Include="subWindows\operateManager\WayBillSearchForm.Designer.cs">
       <DependentUpon>WayBillSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\priceManager\CostPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\priceManager\CostPriceForm.Designer.cs">
+      <DependentUpon>CostPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\priceManager\PublicPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\priceManager\PublicPriceForm.Designer.cs">
+      <DependentUpon>PublicPriceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="subWindows\servicesManager\ServicesChannelForm.cs">
       <SubType>Form</SubType>
@@ -175,8 +217,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="subWindows\dialog\price\AddCostDiaLogForm.resx">
+      <DependentUpon>AddCostDiaLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.resx">
+      <DependentUpon>AddPublicPriceFristDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\dialog\price\ChangeAreaZoneDialogForm.resx">
+      <DependentUpon>ChangeAreaZoneDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\dialog\price\FreightPriceSettingWeightTemplateDialogForm.resx">
+      <DependentUpon>FreightPriceSettingWeightTemplateDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="subWindows\dialog\ServiceChannelDialogForm.resx">
       <DependentUpon>ServiceChannelDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\dialog\services\AddServicesProviderDialogForm.resx">
+      <DependentUpon>AddServicesProviderDialogForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="subWindows\financeManager\collect\CollectManagerForm.resx">
       <DependentUpon>CollectManagerForm.cs</DependentUpon>
@@ -189,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="subWindows\operateManager\WayBillSearchForm.resx">
       <DependentUpon>WayBillSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\priceManager\CostPriceForm.resx">
+      <DependentUpon>CostPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\priceManager\PublicPriceForm.resx">
+      <DependentUpon>PublicPriceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="subWindows\servicesManager\ServicesProviderForm.resx">
       <DependentUpon>ServicesProviderForm.cs</DependentUpon>
@@ -224,13 +287,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CE_TMS.COMMON\CE_TMS.COMMON.csproj">
+    <ProjectReference Include="..\CE_TMS.COMMON\CES_TMS.COMMON.csproj">
       <Project>{2bbed92a-d37b-4743-b54d-b0dbf1499f80}</Project>
-      <Name>CE_TMS.COMMON</Name>
+      <Name>CES_TMS.COMMON</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CE_TMS.MODEL\CE_TMS.MODEL.csproj">
+    <ProjectReference Include="..\CE_TMS.MODEL\CES_TMS.MODEL.csproj">
       <Project>{2e81293e-ebc7-40eb-8c3f-a628042ca1a2}</Project>
-      <Name>CE_TMS.MODEL</Name>
+      <Name>CES_TMS.MODEL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace CE_TMS.subWindows.operateManager
+﻿namespace CES_TMS.subWindows.operateManager
 {
     partial class ForecastManageForm
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bar1 = new DevComponents.DotNetBar.Bar();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
@@ -60,6 +60,9 @@
             this.comboBoxProduct = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxForcastState = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.comboBoxTimeType = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
+            this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.btnServerProvider = new DevComponents.DotNetBar.ButtonX();
             this.btnImportOrderNo = new DevComponents.DotNetBar.ButtonX();
             this.btnServiceChannel = new DevComponents.DotNetBar.ButtonX();
@@ -74,7 +77,6 @@
             this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.dataGridViewMain = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Height = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Currency = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -179,9 +181,7 @@
             this.VALUE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LENGTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WIDTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboItem1 = new DevComponents.Editors.ComboItem();
-            this.comboItem2 = new DevComponents.Editors.ComboItem();
-            this.comboItem3 = new DevComponents.Editors.ComboItem();
+            this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.panelEx1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStart)).BeginInit();
@@ -211,7 +211,7 @@
             this.buttonItem8});
             this.bar1.Location = new System.Drawing.Point(0, 137);
             this.bar1.Name = "bar1";
-            this.bar1.Size = new System.Drawing.Size(1386, 29);
+            this.bar1.Size = new System.Drawing.Size(1413, 29);
             this.bar1.Stretch = true;
             this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bar1.TabIndex = 0;
@@ -292,7 +292,7 @@
             this.panelEx1.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(1386, 137);
+            this.panelEx1.Size = new System.Drawing.Size(1413, 137);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -648,11 +648,26 @@
             this.comboBoxTimeType.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxTimeType.TabIndex = 1;
             // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "全部";
+            this.comboItem1.Value = "0";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "到货时间";
+            this.comboItem2.Value = "1";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "出货时间";
+            this.comboItem3.Value = "2";
+            // 
             // btnServerProvider
             // 
             this.btnServerProvider.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnServerProvider.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnServerProvider.Image = global::CE_TMS.Properties.Resources.search;
+            this.btnServerProvider.Image = global::CES_TMS.Properties.Resources.search;
             this.btnServerProvider.Location = new System.Drawing.Point(785, 93);
             this.btnServerProvider.Name = "btnServerProvider";
             this.btnServerProvider.Size = new System.Drawing.Size(31, 30);
@@ -664,7 +679,7 @@
             // 
             this.btnImportOrderNo.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnImportOrderNo.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnImportOrderNo.Image = global::CE_TMS.Properties.Resources.search;
+            this.btnImportOrderNo.Image = global::CES_TMS.Properties.Resources.search;
             this.btnImportOrderNo.Location = new System.Drawing.Point(785, 10);
             this.btnImportOrderNo.Name = "btnImportOrderNo";
             this.btnImportOrderNo.Size = new System.Drawing.Size(31, 31);
@@ -676,7 +691,7 @@
             // 
             this.btnServiceChannel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnServiceChannel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnServiceChannel.Image = global::CE_TMS.Properties.Resources.search;
+            this.btnServiceChannel.Image = global::CES_TMS.Properties.Resources.search;
             this.btnServiceChannel.Location = new System.Drawing.Point(289, 49);
             this.btnServiceChannel.Name = "btnServiceChannel";
             this.btnServiceChannel.Size = new System.Drawing.Size(32, 32);
@@ -710,9 +725,9 @@
             this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelEx2.Font = new System.Drawing.Font("华文中宋", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.panelEx2.Location = new System.Drawing.Point(0, 458);
+            this.panelEx2.Location = new System.Drawing.Point(0, 647);
             this.panelEx2.Name = "panelEx2";
-            this.panelEx2.Size = new System.Drawing.Size(1386, 36);
+            this.panelEx2.Size = new System.Drawing.Size(1413, 36);
             this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -922,42 +937,23 @@
             this.VALUE,
             this.LENGTH,
             this.WIDTH});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewMain.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewMain.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewMain.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewMain.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewMain.Name = "dataGridViewMain";
             this.dataGridViewMain.RowTemplate.Height = 23;
-            this.dataGridViewMain.Size = new System.Drawing.Size(1386, 292);
+            this.dataGridViewMain.Size = new System.Drawing.Size(1413, 481);
             this.dataGridViewMain.TabIndex = 9;
             this.dataGridViewMain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMain_CellClick);
             this.dataGridViewMain.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.dataGridViewMain_SortCompare);
-            // 
-            // panelEx3
-            // 
-            this.panelEx3.CanvasColor = System.Drawing.SystemColors.Control;
-            this.panelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.panelEx3.Controls.Add(this.dataGridViewMain);
-            this.panelEx3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.panelEx3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEx3.Location = new System.Drawing.Point(0, 166);
-            this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(1386, 292);
-            this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.panelEx3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.panelEx3.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.panelEx3.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.panelEx3.Style.GradientAngle = 90;
-            this.panelEx3.TabIndex = 9;
             // 
             // ID
             // 
@@ -1479,26 +1475,30 @@
             this.WIDTH.HeaderText = "WIDTH";
             this.WIDTH.Name = "WIDTH";
             // 
-            // comboItem1
+            // panelEx3
             // 
-            this.comboItem1.Text = "全部";
-            this.comboItem1.Value = "0";
-            // 
-            // comboItem2
-            // 
-            this.comboItem2.Text = "到货时间";
-            this.comboItem2.Value = "1";
-            // 
-            // comboItem3
-            // 
-            this.comboItem3.Text = "出货时间";
-            this.comboItem3.Value = "2";
+            this.panelEx3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx3.Controls.Add(this.dataGridViewMain);
+            this.panelEx3.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx3.Location = new System.Drawing.Point(0, 166);
+            this.panelEx3.Name = "panelEx3";
+            this.panelEx3.Size = new System.Drawing.Size(1413, 481);
+            this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx3.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx3.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx3.Style.GradientAngle = 90;
+            this.panelEx3.TabIndex = 9;
             // 
             // ForecastManageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 494);
+            this.ClientSize = new System.Drawing.Size(1413, 683);
             this.Controls.Add(this.panelEx3);
             this.Controls.Add(this.bar1);
             this.Controls.Add(this.panelEx2);

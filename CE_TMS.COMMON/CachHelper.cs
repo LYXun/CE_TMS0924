@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CE_TMS.COMMON
+namespace CES_TMS.COMMON
 {
     public class CachHelper
     {
@@ -36,6 +36,19 @@ namespace CE_TMS.COMMON
             if (!dic.ContainsKey(key))
                 return null;
             return dic[key];
+        }
+
+        public void Add(string key, object value)
+        {
+            if (dic.ContainsKey(key))
+            {
+                dic.Remove(key);
+                dic.Add(key, value);
+            }
+            else
+            {
+                dic.Add(key, value);
+            }
         }
     }
 }

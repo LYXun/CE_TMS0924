@@ -1,13 +1,15 @@
-﻿using CE_TMS.MODEL;
+﻿using CES_TMS.MODEL;
 using DevComponents.DotNetBar;
 using NLog;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace CE_TMS.COMMON
+namespace CES_TMS.COMMON
 {
     public class CommonHelper
     {
@@ -47,15 +49,19 @@ namespace CE_TMS.COMMON
             TaskDialog.Show("TMS管理系统",eTaskDialogIcon.Exclamation,msg,"",eTaskDialogButton.Ok,eTaskDialogBackgroundColor.Red);
         }
 
-        public void ShowAlert(object msg)
-        {
-            throw new NotImplementedException();
-        }
-
         public void LogHelperInfo(LogLevel level, string info)
         {
             Logger logger = LogManager.GetCurrentClassLogger();
             logger.Log(level,info);
         }
+
+        public void ShowToast(Control control, string msg,int millSec = 2500)
+        {
+            ToastNotification.ToastBackColor = Color.BurlyWood;
+            ToastNotification.ToastFont = new Font(new FontFamily("宋体"), 18);
+            ToastNotification.ToastForeColor = Color.Black;
+            ToastNotification.Show(control, msg, null, millSec, eToastGlowColor.None, eToastPosition.MiddleCenter);
+        }
+
     }
 }
