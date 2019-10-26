@@ -114,6 +114,7 @@ namespace CES_TMS
             Application.Exit();
         }
 
+        #region 价格管理
         //分区管理
         private void buttonItem14_Click(object sender, EventArgs e)
         {
@@ -166,6 +167,7 @@ namespace CES_TMS
         private void buttonItem22_Click(object sender, EventArgs e)
         {
             setTabShow("杂费价管理", "IncidentalPriceForm", "CES_TMS.subWindows.priceManager.");
-        }
+        } 
+        #endregion
     }
 }

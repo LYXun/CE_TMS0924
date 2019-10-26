@@ -50,8 +50,10 @@
   <ItemGroup>
     <Compile Include="CacheHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TmsCodeCountry.cs" />
     <Compile Include="TmsCustomer.cs" />
     <Compile Include="TmsObject.cs" />
+    <Compile Include="TmsPriceZoneCountry.cs" />
     <Compile Include="TmsReturnBaseObj.cs" />
     <Compile Include="TmsReturnObj.cs" />
     <Compile Include="TmsServiceChannel.cs" />

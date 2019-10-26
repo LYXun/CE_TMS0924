@@ -49,5 +49,43 @@ namespace CES_TMS.COMMON
         失效 = 2
     }
 
+    public enum ZoneStatus : int
+    {
+        草稿 = 1,
+        发布 = 2,
+        作废 = 3
+    };
+
+    public enum ProductType : int
+    {
+        普货 = 1,
+        敏感 = 2,
+        带电 = 3
+    };
+
+    public enum PriceOperation : int
+    {
+        加 = 1,
+        减 = 2,
+        乘 = 3,
+        除 = 4
+    };
+
+    public enum ZoneType : int
+    {
+        国家 = 1,
+        城市 = 2,
+        邮编 = 3
+    };
+
+    public enum PriceType : int
+    {
+        成本 = 1,
+        销售 = 2,
+        公布 = 3,
+        协议 = 4,
+        折扣 = 5,
+        类别 = 6
+    }
 
 }
