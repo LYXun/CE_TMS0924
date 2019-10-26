@@ -1,4 +1,4 @@
-﻿namespace CES_TMS.subWindows.userManager
+﻿namespace CE_TMS.subWindows.userManager
 {
     partial class ChangeCustomerForm
     {

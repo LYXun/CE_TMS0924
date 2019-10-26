@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace CES_TMS.COMMON
+namespace CE_TMS.COMMON
 {
     public class ServicesAPIHelper
     {
@@ -14,10 +14,6 @@ namespace CES_TMS.COMMON
         public string BaseUrl = ConfigurationManager.AppSettings["BaseUrl"].ToString();
         public string IdpBaseUrl = ConfigurationManager.AppSettings["IdpBaseUrl"].ToString();
 
-        private ServicesAPIHelper()
-        {
-
-        }
         public static ServicesAPIHelper Instance
         {
             get

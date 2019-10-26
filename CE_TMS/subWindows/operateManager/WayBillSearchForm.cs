@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CES_TMS.subWindows.operateManager
+namespace CE_TMS.subWindows.operateManager
 {
     public partial class WayBillSearchForm : Form
     {

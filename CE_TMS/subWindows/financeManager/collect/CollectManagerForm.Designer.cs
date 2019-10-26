@@ -1,4 +1,4 @@
-﻿namespace CES_TMS.subWindows.financeManager
+﻿namespace CE_TMS.subWindows.financeManager
 {
     partial class CollectManagerForm
     {

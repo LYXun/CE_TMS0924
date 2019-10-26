@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CES_TMS.COMMON
+namespace CE_TMS.COMMON
 {
     public class NetHelper
     {

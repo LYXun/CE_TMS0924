@@ -1,4 +1,4 @@
-﻿namespace CES_TMS.subWindows.servicesManager
+﻿namespace CE_TMS.subWindows.servicesManager
 {
     partial class ServicesProductForm
     {

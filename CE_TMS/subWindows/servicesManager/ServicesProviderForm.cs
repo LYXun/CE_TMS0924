@@ -1,8 +1,6 @@
-﻿using CES_TMS.COMMON;
-using CES_TMS.MODEL;
-using CES_TMS.subWindows.dialog.services;
+﻿using CE_TMS.COMMON;
+using CE_TMS.MODEL;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using NLog;
 using System;
 using System.Collections.Generic;
@@ -14,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CES_TMS.subWindows.servicesManager
+namespace CE_TMS.subWindows.servicesManager
 {
     public partial class ServicesProviderForm : Form
     {
@@ -34,7 +32,7 @@ namespace CES_TMS.subWindows.servicesManager
         {
             try
             {
-                string url = ServicesAPIHelper.Instance.ServiceProviderQueryListUrl;
+                string url = COMMON.ServicesAPIHelper.Instance.ServiceProviderQueryListUrl;
                 string paramsStr = GetServiceProoviderParams();
                 var dataStr = NetHelper.HttpApi(url, paramsStr, "POST");
                 TmsReturnBaseObj<TmsServiceProvider> parentObj = JsonConvert.DeserializeObject<TmsReturnBaseObj<TmsServiceProvider>>(dataStr);
@@ -53,28 +51,12 @@ namespace CES_TMS.subWindows.servicesManager
 
         private string GetServiceProoviderParams()
         {
-            string status = "3";
-            if (cmbStatus.SelectedItem != null)
-            {
-                status = (cmbStatus.SelectedItem as DevComponents.Editors.ComboItem).Value.ToString();
-            }
-
-            dynamic searchObj = new JObject();
-            searchObj.keyWord = txtServiceCode.Text.Trim();
-            searchObj.orgId = "";
-            searchObj.status = status;
-            searchObj.pageSize = 0;
-            searchObj.pageIndex = 1;
-            return searchObj.ToString();
+            throw new NotImplementedException();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            using (AddServicesProviderDialogForm add = new AddServicesProviderDialogForm())
-            {
-                add.refreshEvent += searchAction;
-                add.ShowDialog();
-            }
+
         }
 
         private void btnUp_Click(object sender, EventArgs e)

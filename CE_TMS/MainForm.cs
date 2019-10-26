@@ -1,4 +1,4 @@
-﻿using CES_TMS.COMMON;
+﻿using CE_TMS.COMMON;
 using DevComponents.DotNetBar;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CES_TMS
+namespace CE_TMS
 {
     public partial class MainForm : Office2007Form
     {
@@ -36,7 +36,7 @@ namespace CES_TMS
             setTabShow("预报管理", "ForecastManageForm");
         }
 
-        private void setTabShow(string tabName, string sfrmName,string sfrmRoot= "CES_TMS.subWindows.operateManager.")
+        private void setTabShow(string tabName, string sfrmName,string sfrmRoot= "CE_TMS.subWindows.operateManager.")
         {
             bool isOpen = false;
             foreach(SuperTabItem item in superTabControlMain.Tabs)
@@ -73,12 +73,12 @@ namespace CES_TMS
         #region 用户管理
         private void buttonItem8_Click(object sender, EventArgs e)
         {
-            setTabShow("用户管理", "UserManagerForm", "CES_TMS.subWindows.userManager.");
+            setTabShow("用户管理", "UserManagerForm", "CE_TMS.subWindows.userManager.");
         }
 
         private void buttonItem9_Click(object sender, EventArgs e)
         {
-            setTabShow("用户类别", "UserCategoryManagerForm", "CES_TMS.subWindows.userManager.");
+            setTabShow("用户类别", "UserCategoryManagerForm", "CE_TMS.subWindows.userManager.");
         }
         #endregion
 
@@ -112,23 +112,6 @@ namespace CES_TMS
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void rbtConfiguration_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        #region 价格管理
-        private void buttonItem14_Click(object sender, EventArgs e)
-        {
-            setTabShow("公布价格管理", "PublicPriceForm", "CES_TMS.subWindows.priceManager.");
-        }
-        #endregion
-
-        private void buttonItem15_Click(object sender, EventArgs e)
-        {
-            setTabShow("成本价管理", "CostPriceForm", "CES_TMS.subWindows.priceManager.");
         }
     }
 }

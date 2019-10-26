@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CES_TMS.subWindows.userManager
+namespace CE_TMS.subWindows.userManager
 {
     public partial class UserCategoryManagerForm : Form
     {

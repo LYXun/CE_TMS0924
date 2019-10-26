@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CES_TMS.subWindows.financeManager.collect
+namespace CE_TMS.subWindows.financeManager.collect
 {
     public partial class CollectBillForm : Form
     {

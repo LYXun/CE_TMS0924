@@ -1,5 +1,5 @@
-﻿using CES_TMS.COMMON;
-using CES_TMS.MODEL;
+﻿using CE_TMS.COMMON;
+using CE_TMS.MODEL;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NLog;
@@ -16,7 +16,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CES_TMS
+namespace CE_TMS
 {
     public partial class LoginForm : Form
     {

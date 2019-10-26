@@ -1,4 +1,4 @@
-﻿namespace CES_TMS.subWindows.dialog
+﻿namespace CE_TMS.subWindows.dialog
 {
     partial class ServiceProviderDialogForm
     {
