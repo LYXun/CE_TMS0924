@@ -88,4 +88,20 @@ namespace CES_TMS.COMMON
         类别 = 6
     }
 
+    public enum PriceServicesKey : int
+    {
+        CostPrice = 1,
+        SalePrice = 2,
+        PublishPrice = 3,
+        AgreePrice = 4,
+        DiscountPrice = 5,
+        KindPrice = 6,
+    };
+
+    public enum GoodsTypeNames : int
+    {
+        袋子 = 1,
+        文件 = 2,
+        包裹 = 3
+    }
 }

@@ -54,9 +54,11 @@
     <Compile Include="TmsCustomer.cs" />
     <Compile Include="TmsObject.cs" />
     <Compile Include="TmsPriceZoneCountry.cs" />
+    <Compile Include="TmsPublishPirceDTO.cs" />
     <Compile Include="TmsReturnBaseObj.cs" />
     <Compile Include="TmsReturnObj.cs" />
     <Compile Include="TmsServiceChannel.cs" />
+    <Compile Include="TmsServiceProduct.cs" />
     <Compile Include="TmsServiceProvider.cs" />
   </ItemGroup>
   <ItemGroup>

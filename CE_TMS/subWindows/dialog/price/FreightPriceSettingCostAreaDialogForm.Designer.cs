@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.导出表格ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.粘贴ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.复制ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,8 +115,8 @@
             // Type
             // 
             this.Type.DataPropertyName = "TypeName";
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Type.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Type.DefaultCellStyle = dataGridViewCellStyle8;
             this.Type.FillWeight = 112.3096F;
             this.Type.HeaderText = "方案类型";
             this.Type.Name = "Type";
@@ -127,8 +127,8 @@
             // CountryName
             // 
             this.CountryName.DataPropertyName = "CountryName";
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CountryName.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CountryName.DefaultCellStyle = dataGridViewCellStyle9;
             this.CountryName.FillWeight = 112.3096F;
             this.CountryName.HeaderText = "国家名称";
             this.CountryName.Name = "CountryName";
@@ -139,8 +139,8 @@
             // CountryCode
             // 
             this.CountryCode.DataPropertyName = "CountryCode";
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CountryCode.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CountryCode.DefaultCellStyle = dataGridViewCellStyle10;
             this.CountryCode.FillWeight = 112.3096F;
             this.CountryCode.HeaderText = "国家代码";
             this.CountryCode.Name = "CountryCode";
@@ -152,8 +152,8 @@
             // 
             this.BigZoneName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.BigZoneName.DataPropertyName = "BigZoneName";
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.BigZoneName.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.BigZoneName.DefaultCellStyle = dataGridViewCellStyle11;
             this.BigZoneName.FillWeight = 112.3096F;
             this.BigZoneName.HeaderText = "分区名称";
             this.BigZoneName.Name = "BigZoneName";
@@ -217,7 +217,7 @@
             this.bar1.Margin = new System.Windows.Forms.Padding(0);
             this.bar1.Name = "bar1";
             this.bar1.RoundCorners = false;
-            this.bar1.Size = new System.Drawing.Size(987, 33);
+            this.bar1.Size = new System.Drawing.Size(987, 31);
             this.bar1.Stretch = true;
             this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.bar1.TabIndex = 17;
@@ -228,7 +228,7 @@
             this.panel3.Controls.Add(this.bar1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 62);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(987, 39);
             this.panel3.TabIndex = 26;
@@ -238,7 +238,7 @@
             this.btnNext.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnNext.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnNext.Location = new System.Drawing.Point(707, 11);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(117, 33);
             this.btnNext.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -252,7 +252,7 @@
             this.panel2.Controls.Add(this.btnClose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 543);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(987, 57);
             this.panel2.TabIndex = 25;
@@ -262,7 +262,7 @@
             this.btnClose.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnClose.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnClose.Location = new System.Drawing.Point(832, 11);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(103, 33);
             this.btnClose.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -273,8 +273,8 @@
             // checkBoxSave
             // 
             this.checkBoxSave.AutoSize = true;
-            this.checkBoxSave.Location = new System.Drawing.Point(763, 22);
-            this.checkBoxSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxSave.Location = new System.Drawing.Point(763, 24);
+            this.checkBoxSave.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxSave.Name = "checkBoxSave";
             this.checkBoxSave.Size = new System.Drawing.Size(97, 20);
             this.checkBoxSave.TabIndex = 19;
@@ -288,12 +288,12 @@
             // 
             this.txtRemark.Border.Class = "TextBoxBorder";
             this.txtRemark.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtRemark.Location = new System.Drawing.Point(495, 15);
-            this.txtRemark.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRemark.Location = new System.Drawing.Point(495, 19);
+            this.txtRemark.Margin = new System.Windows.Forms.Padding(4);
             this.txtRemark.Multiline = true;
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.PreventEnterBeep = true;
-            this.txtRemark.Size = new System.Drawing.Size(260, 33);
+            this.txtRemark.Size = new System.Drawing.Size(260, 27);
             this.txtRemark.TabIndex = 18;
             // 
             // labelX3
@@ -304,8 +304,8 @@
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.labelX3.Location = new System.Drawing.Point(429, 18);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX3.Location = new System.Drawing.Point(429, 19);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(4);
             this.labelX3.Name = "labelX3";
             this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelX3.Size = new System.Drawing.Size(57, 31);
@@ -321,7 +321,7 @@
             this.panel1.Controls.Add(this.labelX2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(987, 62);
             this.panel1.TabIndex = 24;
@@ -333,12 +333,12 @@
             // 
             this.txtAreaName.Border.Class = "TextBoxBorder";
             this.txtAreaName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtAreaName.Location = new System.Drawing.Point(144, 15);
-            this.txtAreaName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAreaName.Location = new System.Drawing.Point(144, 18);
+            this.txtAreaName.Margin = new System.Windows.Forms.Padding(4);
             this.txtAreaName.Multiline = true;
             this.txtAreaName.Name = "txtAreaName";
             this.txtAreaName.PreventEnterBeep = true;
-            this.txtAreaName.Size = new System.Drawing.Size(266, 33);
+            this.txtAreaName.Size = new System.Drawing.Size(266, 27);
             this.txtAreaName.TabIndex = 18;
             // 
             // labelX2
@@ -350,7 +350,7 @@
             this.labelX2.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelX2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.labelX2.Location = new System.Drawing.Point(35, 18);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(4);
             this.labelX2.Name = "labelX2";
             this.labelX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelX2.Size = new System.Drawing.Size(99, 31);
@@ -361,14 +361,14 @@
             // 
             this.dataGridViewXMain.AllowUserToAddRows = false;
             this.dataGridViewXMain.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewXMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewXMain.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewXMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewXMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Checked,
@@ -377,29 +377,29 @@
             this.CountryName,
             this.Type,
             this.ID});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewXMain.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewXMain.DefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridViewXMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewXMain.EnableHeadersVisualStyles = false;
             this.dataGridViewXMain.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewXMain.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewXMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewXMain.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewXMain.MultiSelect = false;
             this.dataGridViewXMain.Name = "dataGridViewXMain";
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewXMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewXMain.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewXMain.RowHeadersWidth = 65;
             this.dataGridViewXMain.RowTemplate.Height = 23;
             this.dataGridViewXMain.Size = new System.Drawing.Size(987, 600);
@@ -416,10 +416,10 @@
             this.Controls.Add(this.dataGridViewXMain);
             this.Font = new System.Drawing.Font("华文中宋", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FreightPriceSettingCostAreaDialogForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FreightPriceSettingCostAreaDialogForm";
+            this.Text = "运费价格设置-价格分区";
             this.Load += new System.EventHandler(this.FreightPriceSettingCostAreaDialogForm_Load);
             this.contextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).EndInit();

@@ -33,19 +33,19 @@ namespace CES_TMS.subWindows.priceManager
             e.Row.HeaderCell.Value = string.Format("{0}",e.Row.Index +1);
         }
 
+        #region 查询事件
         private void btnSearch_Click(object sender, EventArgs e)
         {
             searchAction();
         }
-
-        #region 查询事件
+        
         private void searchAction()
         {
             try
             {
                 string url = ServicesAPIHelper.Instance.ZonePlanQueryListUrl;
                 string paramsStr = GetSearchParams();
-                var dataStr = COMMON.NetHelper.HttpApi(url, paramsStr, "post");
+                var dataStr = NetHelper.HttpApi(url, paramsStr, "post");
                 TmsReturnBaseObj<TmsPriceZone> parentObj = JsonConvert.DeserializeObject<TmsReturnBaseObj<TmsPriceZone>>(dataStr);
                 var list = parentObj.GetJsonList();
                 if (list == null || list.Count < 1)
