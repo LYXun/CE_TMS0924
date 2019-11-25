@@ -62,5 +62,10 @@ namespace CES_TMS.COMMON
             ToastNotification.ToastForeColor = Color.Black;
             ToastNotification.Show(control, msg, null, millSec, eToastGlowColor.None, eToastPosition.MiddleCenter);
         }
+
+        public void ClearPriceTemplateObjectsCache()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

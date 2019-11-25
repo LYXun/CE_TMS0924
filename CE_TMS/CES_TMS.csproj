@@ -81,11 +81,23 @@
     <Compile Include="subWindows\dialog\ImportOrderNumberDialogForm.Designer.cs">
       <DependentUpon>ImportOrderNumberDialogForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.Designer.cs">
+      <DependentUpon>AddPublicPriceFristDialogForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="subWindows\dialog\price\FreightPriceSettingCostAreaDialogForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="subWindows\dialog\price\FreightPriceSettingCostAreaDialogForm.Designer.cs">
       <DependentUpon>FreightPriceSettingCostAreaDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\FreightPriceSettingWeightTemplateDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\FreightPriceSettingWeightTemplateDialogForm.Designer.cs">
+      <DependentUpon>FreightPriceSettingWeightTemplateDialogForm.cs</DependentUpon>
     </Compile>
     <Compile Include="subWindows\dialog\ServiceChannelDialogForm.cs">
       <SubType>Form</SubType>
@@ -193,8 +205,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.resx">
+      <DependentUpon>AddPublicPriceFristDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="subWindows\dialog\price\FreightPriceSettingCostAreaDialogForm.resx">
       <DependentUpon>FreightPriceSettingCostAreaDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subWindows\dialog\price\FreightPriceSettingWeightTemplateDialogForm.resx">
+      <DependentUpon>FreightPriceSettingWeightTemplateDialogForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="subWindows\dialog\ServiceChannelDialogForm.resx">
       <DependentUpon>ServiceChannelDialogForm.cs</DependentUpon>

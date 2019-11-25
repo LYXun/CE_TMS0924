@@ -30,16 +30,19 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.btnSave = new DevComponents.DotNetBar.ButtonX();
+            this.txtServiceCode = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.cmbStatus = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.生效 = new DevComponents.Editors.ComboItem();
+            this.失效 = new DevComponents.Editors.ComboItem();
+            this.所有 = new DevComponents.Editors.ComboItem();
+            this.cmbOrgID = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.bar1 = new DevComponents.DotNetBar.Bar();
             this.btnAdd = new DevComponents.DotNetBar.ButtonItem();
             this.btnUp = new DevComponents.DotNetBar.ButtonItem();
-            this.cmbOrgID = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.cmbStatus = new DevComponents.DotNetBar.Controls.ComboBoxEx();
-            this.txtServiceCode = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.btnSave = new DevComponents.DotNetBar.ButtonX();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.ID = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.ServiceCode = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
@@ -51,9 +54,6 @@
             this.ServiceAddress = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.StatusName = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
             this.CreateTime = new DevComponents.DotNetBar.Controls.DataGridViewLabelXColumn();
-            this.生效 = new DevComponents.Editors.ComboItem();
-            this.失效 = new DevComponents.Editors.ComboItem();
-            this.所有 = new DevComponents.Editors.ComboItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
@@ -75,91 +75,32 @@
             this.panel1.Size = new System.Drawing.Size(1098, 101);
             this.panel1.TabIndex = 0;
             // 
-            // labelX1
+            // btnSave
+            // 
+            this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSave.Location = new System.Drawing.Point(931, 11);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(112, 31);
+            this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSave.TabIndex = 6;
+            this.btnSave.Text = "查询";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtServiceCode
             // 
             // 
             // 
             // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(10, 14);
-            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX1.Size = new System.Drawing.Size(116, 31);
-            this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "所属自组织机构";
-            // 
-            // labelX2
-            // 
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(344, 14);
-            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX2.Size = new System.Drawing.Size(121, 31);
-            this.labelX2.TabIndex = 1;
-            this.labelX2.Text = "服务商代码 名称";
-            // 
-            // labelX3
-            // 
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(10, 58);
-            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelX3.Size = new System.Drawing.Size(116, 31);
-            this.labelX3.TabIndex = 2;
-            this.labelX3.Text = "服务商状态";
-            // 
-            // bar1
-            // 
-            this.bar1.AntiAlias = true;
-            this.bar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bar1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.bar1.IsMaximized = false;
-            this.bar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnAdd,
-            this.btnUp});
-            this.bar1.Location = new System.Drawing.Point(0, 101);
-            this.bar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bar1.Name = "bar1";
-            this.bar1.Size = new System.Drawing.Size(1098, 27);
-            this.bar1.Stretch = true;
-            this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.bar1.TabIndex = 1;
-            this.bar1.TabStop = false;
-            this.bar1.Text = "bar1";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Text = "添加";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnUp
-            // 
-            this.btnUp.Name = "btnUp";
-            this.btnUp.Text = "修改";
-            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
-            // 
-            // cmbOrgID
-            // 
-            this.cmbOrgID.DisplayMember = "Text";
-            this.cmbOrgID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbOrgID.FormattingEnabled = true;
-            this.cmbOrgID.ItemHeight = 21;
-            this.cmbOrgID.Location = new System.Drawing.Point(139, 16);
-            this.cmbOrgID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmbOrgID.Name = "cmbOrgID";
-            this.cmbOrgID.Size = new System.Drawing.Size(179, 27);
-            this.cmbOrgID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.cmbOrgID.TabIndex = 3;
+            this.txtServiceCode.Border.Class = "TextBoxBorder";
+            this.txtServiceCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtServiceCode.Location = new System.Drawing.Point(485, 16);
+            this.txtServiceCode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtServiceCode.Name = "txtServiceCode";
+            this.txtServiceCode.PreventEnterBeep = true;
+            this.txtServiceCode.Size = new System.Drawing.Size(269, 26);
+            this.txtServiceCode.TabIndex = 5;
             // 
             // cmbStatus
             // 
@@ -178,32 +119,106 @@
             this.cmbStatus.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cmbStatus.TabIndex = 4;
             // 
-            // txtServiceCode
+            // 生效
+            // 
+            this.生效.Text = "生效";
+            this.生效.Value = "1";
+            // 
+            // 失效
+            // 
+            this.失效.Text = "失效";
+            this.失效.Value = "2";
+            // 
+            // 所有
+            // 
+            this.所有.Text = "所有";
+            this.所有.Value = "3";
+            // 
+            // cmbOrgID
+            // 
+            this.cmbOrgID.DisplayMember = "Text";
+            this.cmbOrgID.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbOrgID.FormattingEnabled = true;
+            this.cmbOrgID.ItemHeight = 21;
+            this.cmbOrgID.Location = new System.Drawing.Point(139, 16);
+            this.cmbOrgID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cmbOrgID.Name = "cmbOrgID";
+            this.cmbOrgID.Size = new System.Drawing.Size(179, 27);
+            this.cmbOrgID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cmbOrgID.TabIndex = 3;
+            // 
+            // labelX3
             // 
             // 
             // 
             // 
-            this.txtServiceCode.Border.Class = "TextBoxBorder";
-            this.txtServiceCode.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtServiceCode.Location = new System.Drawing.Point(485, 16);
-            this.txtServiceCode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtServiceCode.Name = "txtServiceCode";
-            this.txtServiceCode.PreventEnterBeep = true;
-            this.txtServiceCode.Size = new System.Drawing.Size(269, 26);
-            this.txtServiceCode.TabIndex = 5;
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Location = new System.Drawing.Point(10, 58);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelX3.Size = new System.Drawing.Size(116, 31);
+            this.labelX3.TabIndex = 2;
+            this.labelX3.Text = "服务商状态";
             // 
-            // btnSave
+            // labelX2
             // 
-            this.btnSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnSave.Location = new System.Drawing.Point(931, 11);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 31);
-            this.btnSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSave.TabIndex = 6;
-            this.btnSave.Text = "查询";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.Location = new System.Drawing.Point(344, 14);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelX2.Size = new System.Drawing.Size(121, 31);
+            this.labelX2.TabIndex = 1;
+            this.labelX2.Text = "服务商代码 名称";
+            // 
+            // labelX1
+            // 
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Location = new System.Drawing.Point(10, 14);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelX1.Size = new System.Drawing.Size(116, 31);
+            this.labelX1.TabIndex = 0;
+            this.labelX1.Text = "所属自组织机构";
+            // 
+            // bar1
+            // 
+            this.bar1.AntiAlias = true;
+            this.bar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bar1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.bar1.IsMaximized = false;
+            this.bar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnAdd,
+            this.btnUp});
+            this.bar1.Location = new System.Drawing.Point(0, 101);
+            this.bar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bar1.Name = "bar1";
+            this.bar1.Size = new System.Drawing.Size(1098, 26);
+            this.bar1.Stretch = true;
+            this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.bar1.TabIndex = 1;
+            this.bar1.TabStop = false;
+            this.bar1.Text = "bar1";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Text = "添加";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnUp
+            // 
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Text = "修改";
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
             // dataGridViewX1
             // 
@@ -229,10 +244,10 @@
             this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridViewX1.Location = new System.Drawing.Point(0, 128);
+            this.dataGridViewX1.Location = new System.Drawing.Point(0, 127);
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.RowTemplate.Height = 23;
-            this.dataGridViewX1.Size = new System.Drawing.Size(1098, 519);
+            this.dataGridViewX1.Size = new System.Drawing.Size(1098, 520);
             this.dataGridViewX1.TabIndex = 2;
             // 
             // ID
@@ -293,21 +308,6 @@
             this.CreateTime.DataPropertyName = "CreateTime";
             this.CreateTime.HeaderText = "创建时间";
             this.CreateTime.Name = "CreateTime";
-            // 
-            // 生效
-            // 
-            this.生效.Text = "生效";
-            this.生效.Value = "1";
-            // 
-            // 失效
-            // 
-            this.失效.Text = "失效";
-            this.失效.Value = "2";
-            // 
-            // 所有
-            // 
-            this.所有.Text = "所有";
-            this.所有.Value = "3";
             // 
             // ServicesProviderForm
             // 

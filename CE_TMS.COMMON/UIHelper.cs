@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using DevComponents.DotNetBar.Controls;
 using HYTMS.MODEL;
 
@@ -56,6 +57,22 @@ namespace CES_TMS.COMMON
                 CachHelper.Instance.Add("allProductList", productLst);
             }
             return productLst;
+        }
+
+        public void CloseForm(string[] formAry)
+        {
+            for (int i = 0; i < formAry.Length; i++)
+            {
+                Form frm = Application.OpenForms[formAry[i]];
+                if (frm != null)
+                {
+                    if (!frm.IsDisposed)
+                    {
+                        frm.Dispose();
+                    }
+                    //frm.Close();
+                }
+            }
         }
     }
 }
