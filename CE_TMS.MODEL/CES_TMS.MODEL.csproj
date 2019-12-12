@@ -54,13 +54,17 @@
     <Compile Include="TmsCustomer.cs" />
     <Compile Include="TmsObject.cs" />
     <Compile Include="TmsPricePublish.cs" />
+    <Compile Include="TmsPriceWeightZone.cs" />
     <Compile Include="TmsPriceZoneCountry.cs" />
+    <Compile Include="TmsPriceZoneCountryFee.cs" />
+    <Compile Include="TmsPriceZoneWeightPrice.cs" />
     <Compile Include="TmsPublishPirceDTO.cs" />
     <Compile Include="TmsReturnBaseObj.cs" />
     <Compile Include="TmsReturnObj.cs" />
     <Compile Include="TmsServiceChannel.cs" />
     <Compile Include="TmsServiceProduct.cs" />
     <Compile Include="TmsServiceProvider.cs" />
+    <Compile Include="TmsZoneTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

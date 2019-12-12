@@ -87,6 +87,12 @@
     <Compile Include="subWindows\dialog\price\AddPublicPriceFristDialogForm.Designer.cs">
       <DependentUpon>AddPublicPriceFristDialogForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="subWindows\dialog\price\ChangeAreaZoneDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subWindows\dialog\price\ChangeAreaZoneDialogForm.Designer.cs">
+      <DependentUpon>ChangeAreaZoneDialogForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="subWindows\dialog\price\FreightPriceSettingCostAreaDialogForm.cs">
       <SubType>Form</SubType>
     </Compile>

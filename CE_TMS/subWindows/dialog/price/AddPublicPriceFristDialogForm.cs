@@ -27,7 +27,11 @@ namespace CES_TMS.subWindows.dialog.price
 
         private void AddPublicPriceFristDialogForm_Load(object sender, EventArgs e)
         {
-
+            dateTimeInputStart.Value = DateTime.Now;
+            dateTimeInputEnd.Value = DateTime.Now.AddYears(3);
+            cBoxRmbType.SelectedIndex = 0;
+            comboBoxExProductType.SelectedIndex = 0;
+            UIHelper.Instance.GetProductCombox(comboBoxExProduct);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -107,7 +111,20 @@ namespace CES_TMS.subWindows.dialog.price
 
         private void btnZone_Click(object sender, EventArgs e)
         {
+            using (ChangeAreaZoneDialogForm zoneDialog = new ChangeAreaZoneDialogForm())
+            {
+                zoneDialog.ChangeZoneEvent += ZoneDialog_ChangeZoneEvent;
+                zoneDialog.ShowDialog();
+            }
+        }
 
+        private void ZoneDialog_ChangeZoneEvent(TmsPriceZone obj)
+        {
+            if (obj != null)
+            {
+                txtZoneName.Text = obj.ZoneName;
+                hostZoneId = obj.Id;
+            }
         }
     }
 }

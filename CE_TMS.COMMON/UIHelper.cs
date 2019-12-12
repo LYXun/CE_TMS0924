@@ -48,6 +48,11 @@ namespace CES_TMS.COMMON
             }
         }
 
+        public void GetProductCombox(ComboBoxEx comboBoxExProduct)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<TmsServiceProduct> GetProductList(string channelCode)
         {
             var productLst = CachHelper.Instance.GetData("allProductList") as List<TmsServiceProduct>;
